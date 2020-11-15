@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\react-jwt-auth",
+    "\\src"
   ],
   "PreviewInSolutionExplorer": false
 }

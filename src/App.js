@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import AuthService from "./services/auth.service";
+import React, { Component } from "react";
+import { Link, Route, Switch } from "react-router-dom";
 
-import Login from "./components/login.component";
-import Register from "./components/register.component";
-import Home from "./components/home.component";
-import Profile from "./components/profile.component";
-import BoardUser from "./components/board-user.component";
-import BoardModerator from "./components/board-moderator.component";
 import BoardAdmin from "./components/board-admin.component";
+import BoardModerator from "./components/board-moderator.component";
+import BoardUser from "./components/board-user.component";
+import Home from "./components/home.component";
+import Login from "./components/login.component";
+import Profile from "./components/profile.component";
+import Register from "./components/register.component";
+import AuthService from "./services/auth.service";
 
 class App extends Component {
   constructor(props) {
@@ -96,20 +96,20 @@ class App extends Component {
               </li>
             </div>
           ) : (
-            <div className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to={"/login"} className="nav-link">
-                  Login
+              <div className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to={"/login"} className="nav-link">
+                    Login
                 </Link>
-              </li>
+                </li>
 
-              <li className="nav-item">
-                <Link to={"/register"} className="nav-link">
-                  Sign Up
+                <li className="nav-item">
+                  <Link to={"/register"} className="nav-link">
+                    Sign Up
                 </Link>
-              </li>
-            </div>
-          )}
+                </li>
+              </div>
+            )}
         </nav>
 
         <div className="container mt-3">
